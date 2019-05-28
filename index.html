@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Bon Appe-fish</title>
+    <script type="text/javascript">
+        WebFontConfig = {
+            google: {
+                families: ['Lobster']
+            }
+        };
+        (function() {
+            var wf = document.createElement('script');
+            wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="phaser.min.js"></script>
+    <script src="Boot.js"></script>
+    <script src="preloader.js"></script>
+
+    <script src="intro.js"></script>
+    <script src="help.js"></script>
+    <script src="game.js"></script>
+    <script src="win.js"></script>
+    <script src="lose.js"></script>
+
+
+
+</head>
+
+<body>
+    <div id="phaser-canvas"></div>
+    <script type="text/javascript">
+        window.onload = function() {
+            console.log('windows loaded');
+            //
+            var game = new Phaser.Game(960, 720, Phaser.AUTO, 'phaser-canvas');
+
+            game.state.add('Boot', gameObj.Boot);
+            game.state.add('preloader', gameObj.preloader);
+            game.state.add('intro', gameObj.intro);
+            game.state.add('help', gameObj.help);
+            game.state.add('game', gameObj.game);
+            game.state.add('win', gameObj.win);
+            game.state.add('lose', gameObj.lose);
+            game.state.start('Boot');
+        }; // windows.onload
+    </script>
+</body>
+
+</html>

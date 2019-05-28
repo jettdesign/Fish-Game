@@ -1,0 +1,21 @@
+Completed To-do list:
+
+Customized preloader
+Changed from dragging the mouse to using arrow keys to control the fish (much easier to control)
+Different red and yellow dots will travel at different directions
+Added sounds when eating red/yellow dots.
+Added different sounds on win and lose screen
+Lose the game if can’t reach to at lease 50 points within 2 minutes
+Eat red dots to earn 5 points, eat yellow dots will lose 7 points 
+Get eaten by bigger fish will lose the game immediately
+Fixed graphics (background images and size)
+Fixed win screen (change “Level Up!” To “You Won!!!”)
+Fixed button spritesheets (consistent color on hover, OVER, OUT, DOWN etc)
+
+
+
+Optional: (Completed)
+Different fish will horizontally swim across the game screen in different directions and different times
+Added fish’s animations
+Added to intro game screen animations
+Red and yellow dots will float around the game screen randomly
